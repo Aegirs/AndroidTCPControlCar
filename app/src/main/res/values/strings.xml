@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CarWifi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Command_Car">Command Car</string>
+</resources>

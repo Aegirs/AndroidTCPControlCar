@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/Command_Car" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:id="@+id/forward"
+        android:minHeight="150dp"
+        android:minWidth="200dp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_above="@+id/right"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back"
+        android:minWidth="200dp"
+        android:minHeight="150dp"
+        android:layout_toRightOf="@+id/left"
+        android:layout_below="@+id/left"
+        android:layout_toLeftOf="@+id/right"
+        android:layout_toStartOf="@+id/right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/left"
+        android:minWidth="200dp"
+        android:minHeight="150dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_toStartOf="@+id/forward"
+        android:layout_below="@+id/forward"
+        android:layout_toLeftOf="@+id/forward" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/right"
+        android:minHeight="150dp"
+        android:minWidth="200dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/forward"
+        android:layout_toEndOf="@+id/forward" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/infoTCP"
+        android:layout_alignTop="@+id/right"
+        android:layout_toRightOf="@+id/left"
+        android:layout_above="@+id/back"
+        android:layout_toLeftOf="@+id/right"
+        android:layout_toStartOf="@+id/right" />
+
+</RelativeLayout>
